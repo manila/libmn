@@ -15,14 +15,16 @@ OBJS = $(wildcard ./*.o)
 all: $(TARGET)
 
 clean:
-	rm -rf ./bin/*.o
+	@rm -rf ./bin
 
 fclean: clean
-	rm -f $(TARGET)
+	@rm -f $(TARGET)
 
 re: fclean all
 
 $(TARGET):
-	$(CC) $(INC) $(CFLAGS) -c $(FILES)
-	ar rc $(TARGET) $(OBJS)
-	ranlib $(TARGET)
+	@mkdir -p ./bin
+	@$(CC) $(INC) $(CFLAGS) -c $(FILES)
+	@ar rc $(TARGET) $(OBJS)
+	@ranlib $(TARGET)
+	@mv *.o ./bin
