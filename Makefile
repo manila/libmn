@@ -7,7 +7,7 @@
 TARGET = libmn.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-INC = -I ./inc
+INC = -I ./include
 FILES = $(wildcard ./src/*.c)
 OBJS = $(wildcard ./*.o)
 
@@ -23,6 +23,6 @@ fclean: clean
 re: fclean all
 
 $(TARGET):
-	$(CC) $(CFLAGS) -c $(FILES)
+	$(CC) $(INC) $(CFLAGS) -c $(FILES)
 	ar rc $(TARGET) $(OBJS)
 	ranlib $(TARGET)
