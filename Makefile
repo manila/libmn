@@ -9,8 +9,6 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 INC = -I ./include
 FILES = $(wildcard ./src/*.c)
-OBJS = $(wildcard ./*.o)
-
 
 all: $(TARGET)
 
@@ -25,6 +23,6 @@ re: fclean all
 $(TARGET):
 	@mkdir -p ./bin
 	@$(CC) $(INC) $(CFLAGS) -c $(FILES)
-	@ar rc $(TARGET) $(OBJS)
+	@ar rc $(TARGET) *.o
 	@ranlib $(TARGET)
 	@mv *.o ./bin
