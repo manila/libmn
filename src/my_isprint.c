@@ -4,7 +4,7 @@
 ** Manuel Nila - July 2017
 */
 
-int	my_isprint(char c)
+int	my_isprint(int c)
 {
 	return (c >= 32 && c < 127);
 }
