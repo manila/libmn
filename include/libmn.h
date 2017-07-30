@@ -19,5 +19,6 @@ int	my_islower(int c);
 int	my_isdigit(int c);
 int	my_isprint(int c);
 int	my_isascii(int c);
+int	my_isalpha(int c);
 
 #endif
