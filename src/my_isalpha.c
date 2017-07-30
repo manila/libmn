@@ -1,5 +1,5 @@
 /*
-** return non-zero if param is in range 0-9, A-Z, or a-z, zero if not
+** return non-zero if param is in range A-Z or a-z, zero if not
 **
 ** Manuel Nila - July 2017
 */
