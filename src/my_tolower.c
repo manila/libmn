@@ -8,7 +8,5 @@
 
 char	my_tolower(char c)
 {
-	if (c >= 'A' && c <= 'Z')
-		c += 32;
-	return (c);
+	return (my_isupper(c) ? c + 32 : c);
 }
