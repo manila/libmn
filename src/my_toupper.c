@@ -8,7 +8,5 @@
 
 char	my_toupper(char c)
 {
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
+	return (my_islower(c) ? c - 32 : c);
 }
