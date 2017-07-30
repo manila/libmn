@@ -15,5 +15,6 @@ int	my_strlen(char *str);
 char	my_tolower(char c);
 char	my_toupper(char c);
 int	my_isdigit(char c);
+int	my_isprint(char c);
 
 #endif
