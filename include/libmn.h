@@ -14,6 +14,7 @@ void	my_putstr(char *str);
 int	my_strlen(char *str);
 char	my_tolower(char c);
 char	my_toupper(char c);
+int	my_isupper(int c);
 int	my_isdigit(int c);
 int	my_isprint(int c);
 int	my_isascii(int c);
