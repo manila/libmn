@@ -13,5 +13,6 @@ void	my_putchar(char c);
 void	my_putstr(char *str);
 int	my_strlen(char *str);
 char	my_tolower(char c);
+char	my_toupper(char c);
 
 #endif
