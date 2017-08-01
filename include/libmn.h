@@ -10,7 +10,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-void	my_putchar(char c);
+void	my_putchar(int c);
 void	my_putstr(char *str);
 void	*my_memset(void *s, int c, size_t n);
 size_t	my_strlen(char *str);
