@@ -12,6 +12,7 @@
 
 void	my_putchar(char c);
 void	my_putstr(char *str);
+void	*my_memset(void *s, int c, size_t n);
 size_t	my_strlen(char *str);
 char	my_tolower(char c);
 char	my_toupper(char c);
