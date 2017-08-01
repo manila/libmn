@@ -8,10 +8,11 @@
 # define LIBMN_H
 
 # include <unistd.h>
+# include <stdlib.h>
 
 void	my_putchar(char c);
 void	my_putstr(char *str);
-int	my_strlen(char *str);
+size_t	my_strlen(char *str);
 char	my_tolower(char c);
 char	my_toupper(char c);
 int	my_isupper(int c);
