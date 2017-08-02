@@ -9,9 +9,11 @@
 void	*my_memcpy(void *dest, const void *src, size_t n)
 {
 	char	*b;
+	char	*s;
 
 	b = (char *)dest;
-	while (n)
-		b[n--] = *(char *)src++;
+	s = (char *)src;
+	while (n--)
+		b[n] = s[n];
 	return (dest);
 }
