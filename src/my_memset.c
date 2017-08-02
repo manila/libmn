@@ -8,15 +8,10 @@
 
 void	*my_memset(void *s, int c, size_t n)
 {
-	size_t	i;
 	char 	*ptr;
 
-	i = 0;
 	ptr = (char *)s;	
-	while (i < n)
-	{
-		ptr[i] = c;
-		i++;
-	}
+	while (n)
+		ptr[--n] = c;
 	return (s);
 }
