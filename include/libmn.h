@@ -18,6 +18,7 @@ void	*my_memcpy(void *dest, const void *src, size_t n);
 void	*my_memccpy(void *dest, const void *src, int c, size_t n);
 size_t	my_strlen(char *str);
 char	*my_strdup(char *s);
+char	*my_strcpy(char *dest, const char *src);
 char	my_tolower(char c);
 char	my_toupper(char c);
 int	my_isupper(int c);
