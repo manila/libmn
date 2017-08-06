@@ -8,13 +8,12 @@
 
 char	*my_strcat(char *dest, const char *src)
 {
-	size_t	i;
+	char *ptr = dest;
 
-	i = 0;
-	while (dest[i])
-		i++;
+	while (*dest)
+		dest++;
 	while (*src)
-		dest[i++] = *src++;
-	dest[i] = '\0';
-	return (dest);
+		*dest++ = *src++;
+	*dest = '\0';
+	return (ptr);
 }
