@@ -22,6 +22,7 @@ char	*my_strdup(char *s);
 char	*my_strcpy(char *dest, const char *src);
 char	*my_strncpy(char *dest, const char *src, size_t n);
 char	*my_strcat(char *dest, const char *src);
+char	*my_strncat(char *dest, const char *src, size_t n);
 char	my_tolower(char c);
 char	my_toupper(char c);
 int	my_memcmp(const void *s1, const void *s2, size_t n);
