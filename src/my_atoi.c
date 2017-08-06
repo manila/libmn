@@ -20,10 +20,6 @@ int	my_atoi(const char *nptr)
 	if (i && (char)nptr[i - 1] == '-')
 		neg = -1;
 	while (my_isdigit((char)nptr[i]))
-	{
-		nbr *= 10;
-		nbr -= (int)nptr[i] - '0';
-		i++;
-	}
+		nbr = (nbr * 10) - ((int)nptr[i++] - '0');
 	return (neg < 0 ? nbr : -(nbr));
 }
