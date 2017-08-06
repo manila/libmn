@@ -8,7 +8,9 @@
 
 char	*my_strchr(const char *s, int c)
 {
-	if (*s == (char) c || !*s)
+	if (*s == (char) c)
 		return ((char *)s);
+	else if (!*s)
+		return (NULL);
 	return my_strchr(++s, c);
 }
