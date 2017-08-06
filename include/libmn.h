@@ -29,6 +29,7 @@ char	*my_strstr(const char *haystack, const char *needle);
 char	*my_strnstr(const char *haystack, const char *needle, size_t n);
 char	my_tolower(char c);
 char	my_toupper(char c);
+int	my_atoi(const char *nptr);
 int	my_strcmp(const char *s1, const char *s2);
 int	my_strncmp(const char *s1, const char *s2, size_t n);
 int	my_memcmp(const void *s1, const void *s2, size_t n);
