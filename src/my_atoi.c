@@ -17,7 +17,7 @@ int	my_atoi(const char *nptr)
 	neg = 1;
 	while (!my_isdigit((char)nptr[i]))
 		i++;
-	if (i > 1 && (char)nptr[i - 1] == '-')
+	if (i && (char)nptr[i - 1] == '-')
 		neg = -1;
 	while (my_isdigit((char)nptr[i]))
 	{
