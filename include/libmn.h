@@ -16,6 +16,7 @@ void	my_bzero(void *s, size_t n);
 void	*my_memset(void *s, int c, size_t n);
 void	*my_memcpy(void *dest, const void *src, size_t n);
 void	*my_memccpy(void *dest, const void *src, int c, size_t n);
+void	*my_memmove(void *dest, const void *src, size_t n);
 void	*my_memchr(const void *s, int c, size_t n);
 size_t	my_strlen(char *str);
 char	*my_strdup(char *s);
