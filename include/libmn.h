@@ -17,6 +17,7 @@ void	my_memdel(void **ap);
 void	my_strdel(char **as);
 void	my_strclr(char *s);
 void	my_striter(char *s, void (*f)(char *));
+void	my_striteri(char *s, void (*f)(unsigned int, char *));
 void	*my_memset(void *s, int c, size_t n);
 void	*my_memcpy(void *dest, const void *src, size_t n);
 void	*my_memccpy(void *dest, const void *src, int c, size_t n);
