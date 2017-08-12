@@ -12,6 +12,7 @@
 
 void	my_putchar(int c);
 void	my_putstr(char *str);
+void	my_putnbr(int n);
 void	my_bzero(void *s, size_t n);
 void	my_memdel(void **ap);
 void	my_strdel(char **as);
