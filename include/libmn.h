@@ -11,6 +11,7 @@
 # include <stdlib.h>
 
 void	my_putchar(int c);
+void	my_putchar_fd(char c, int fd);
 void	my_putstr(char *str);
 void	my_putnbr(int n);
 void	my_bzero(void *s, size_t n);
