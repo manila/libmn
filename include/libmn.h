@@ -49,6 +49,7 @@ int	my_atoi(const char *nptr);
 int	my_strcmp(const char *s1, const char *s2);
 int	my_strncmp(const char *s1, const char *s2, size_t n);
 int	my_strequ(char const *s1, char const *s2);
+int	my_strnequ(char const *s1, char const *s2, size_t n);
 int	my_memcmp(const void *s1, const void *s2, size_t n);
 int	my_isupper(int c);
 int	my_islower(int c);
