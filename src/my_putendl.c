@@ -8,6 +8,5 @@
 
 void	my_putendl(char const *s)
 {
-	my_putstr((char *) s);
-	my_putchar('\n');
+	my_putendl_fd(s, 1);
 }
