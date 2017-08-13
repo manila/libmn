@@ -41,6 +41,7 @@ char	*my_strrchr(const char *s, int c);
 char	*my_strstr(const char *haystack, const char *needle);
 char	*my_strnstr(const char *haystack, const char *needle, size_t n);
 char	*my_strnew(size_t size);
+char	*my_strmap(char const *s, char (*f)(char));
 char	my_tolower(char c);
 char	my_toupper(char c);
 int	my_atoi(const char *nptr);
