@@ -17,6 +17,7 @@ void	my_putstr_fd(char const *s, int fd);
 void	my_putnbr(int n);
 void	my_putnbr_fd(int n, int fd);
 void	my_putendl(char const *s);
+void	my_putendl_fd(char const *s, int fd);
 void	my_bzero(void *s, size_t n);
 void	my_memdel(void **ap);
 void	my_strdel(char **as);
