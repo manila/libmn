@@ -46,6 +46,7 @@ char	*my_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*my_strsub(char const *s, unsigned int start, size_t len);
 char	*my_strjoin(char const *s1, char const *s2);
 char	*my_strtrim(char const *s);
+char	*my_itoa(int n);
 char	my_tolower(char c);
 char	my_toupper(char c);
 int	my_atoi(const char *nptr);
