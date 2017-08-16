@@ -7,11 +7,11 @@ The code loosely follows the guidlines for the libft project that is a part of t
 ## Documentation
 These functions mirror the behavior of the C standard library (https://en.wikipedia.org/wiki/C_standard_library).
 
-The important difference being my functions are prefixed with ```my_```, e.g. ```atoi``` becomes ```my_atoi```.
+The difference being my functions are prefixed with ```my_```, e.g. ```atoi``` becomes ```my_atoi```.
 
 ## Building
 
-**clone this repo:**
+**clone the repo:**
 ```shell
 git clone https://github.com/manila/libmn.git libmn && cd libmn
 ```
