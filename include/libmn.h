@@ -65,5 +65,6 @@ int	my_isprint(int c);
 int	my_isascii(int c);
 int	my_isalpha(int c);
 int	my_isalnum(int c);
+double	my_pow(int x, int y);
 
 #endif
