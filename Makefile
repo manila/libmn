@@ -10,6 +10,8 @@ CFLAGS = -Wall -Werror -Wextra
 INC = -I ./include
 FILES = $(wildcard ./src/*.c)
 
+.PHONEY: all clean fclean re
+
 all: $(TARGET)
 
 clean:
@@ -20,9 +22,9 @@ fclean: clean
 
 re: fclean all
 
-$(TARGET):
+$(TARGET): $(FILES)
 	@mkdir -p ./bin
-	@$(CC) $(INC) $(CFLAGS) -c $(FILES)
-	@ar rc $(TARGET) *.o
-	@ranlib $(TARGET)
+	@$(CC) $(INC) $(CFLAGS) -c $^
+	@ar rc $@ *.o
+	@ranlib $@
 	@mv *.o ./bin
